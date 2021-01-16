@@ -82,7 +82,7 @@ st.markdown("We can observe that the dataset is **_balanced_** around the **'tar
 #ax.hist(data['bd'], bins=20)
 #st.pyplot(fig)
 st.subheader('Age Distribution of users')
-image = Image.open('cnt_plot_bd.png')
+image = Image.open('cnt_plot_bd.PNG')
 st.image(image, use_column_width=True)
 st.markdown("Most users are less than **_60 years_** of age. However, some users have age less than or equal to **_0 years_** while there are a few with age greater than **_100 years_**, some even with age greater than **_1000 years_**, which is practically impossible. This can be further understood by looking at the boxplot below.", 
             unsafe_allow_html=False)
