@@ -167,7 +167,7 @@ st.markdown("A ot of users prefer registering via modes **_9_** & **_7_**, which
             unsafe_allow_html=False)
 
 st.subheader('Heatmap for missing numbers')
-image = Image.open('heatmap_feat.png')
+image = Image.open('heatmap_feat.PNG')
 st.image(image, use_column_width=True)
 st.markdown("We can see there is a strong **_correlation_** in the trends of **missing values** for some features.", 
             unsafe_allow_html=False)
