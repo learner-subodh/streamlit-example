@@ -88,35 +88,35 @@ st.markdown("Most users are less than **_60 years_** of age. However, some users
             unsafe_allow_html=False)
 
 st.subheader('Boxplot for Age of users')
-image = Image.open('bd_boxplot.png')
+image = Image.open('bd_boxplot.PNG')
 st.image(image, use_column_width=True)
 
 st.subheader('PDF of Age of users')
-image = Image.open('bd_pdf.png')
+image = Image.open('bd_pdf.PNG')
 st.image(image, use_column_width=True)
 st.markdown("Around **_35 percent_** of the age values are less than or equal to zero, while around **_66 percent_** of them lie between 0 & 54 years of age, both inclusive.", 
             unsafe_allow_html=False)
 
 st.subheader('CDF of Age of users')
-image = Image.open('bd_cdf.png')
+image = Image.open('bd_cdf.PNG')
 st.image(image, use_column_width=True)
 st.markdown("More than **_99 percent_** of the users have their age registered between 0 & 54 years", 
             unsafe_allow_html=False)
 
 st.subheader('Source System Tab vs target')
-image = Image.open('sst_tar.png')
+image = Image.open('sst_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("Max number of listening events occur at **_'my library'_** & **_'discover'_** tabs, which is kind of logical as the prior one tends to have songs which a user listens quite frequently while the later acts as a platform to explore more songs which a user might in turn like. **_60 percent_** of the events generated through the 'my library' tab have target value of 1 while 'discover' tab has events with target as 0 **slightly** more than that with target as 1.", 
             unsafe_allow_html=False)
 
 st.subheader('Source Type vs target')
-image = Image.open('sstype_tar.png')
+image = Image.open('sstype_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("The source type **_'local library'_** generates the most number of events out of which around two third of the events have target value as 1. It is followed by source types **_'online playlist'_** and **_'local playlist'_** which have more contributions towards target = 0 and target = 1 respectively.", 
             unsafe_allow_html=False)
 
 st.subheader('Source Screen Name vs target')
-image = Image.open('ssn_tar.png')
+image = Image.open('ssn_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("Out of the total events trigerred through given source screens, more than **_half_** of the events are triggered at the **_'local playlist more_** screen. And out of the total events generated from 'local playlist more' screen, around two third of events have target as 1. The **_'online playlist more'_** screen also has a good enough contribution towards target = 1 events.", 
             unsafe_allow_html=False)
@@ -125,43 +125,43 @@ st.markdown("Thus, it is quite evident that there is some **_overlap_** in the *
             unsafe_allow_html=False)
 
 st.subheader('Distribution of Genders')
-image = Image.open('cnt_plt_gender.png')
+image = Image.open('cnt_plt_gender.PNG')
 st.image(image, use_column_width=True)
 st.markdown("The dataset is **_balanced_** around the **'gender'** attribute.", 
             unsafe_allow_html=False)
 
 st.subheader('Gender vs target')
-image = Image.open('gen_tar.png')
+image = Image.open('gen_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("Both genders seem to be **_evenly_** poised towards both target values.", 
             unsafe_allow_html=False)
 
 st.subheader('Song Duration vs target')
-image = Image.open('songdur_tar.png')
+image = Image.open('songdur_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("Most songs, around **_50 percent_** to be precise, have a duration of **4 minutes**, and around**_ 95 percent_** of the songs have a duration of either **3, 4 or 5 minutes**. Also, most users prefer listeing to songs with **_not so long_** duration, that is somewhat close to or around **3 to 5 minutes** of length. Both target values are in **_equal_** number for all songs with different durations.", 
             unsafe_allow_html=False)
 
 st.subheader('Distribution of Listening events')
-image = Image.open('dist_listening.png')
+image = Image.open('dist_listening.PNG')
 st.image(image, use_column_width=True)
 st.markdown("As can be observed, a lot of songs have been listened to very few number of times and very few songs have been listened to a lot of time. Thus, these songs which are listeed to many times might be very **_popular_** ones either in the area where the data is collected or even globally.", 
             unsafe_allow_html=False)
 
 st.subheader('City vs target')
-image = Image.open('city_tar.png')
+image = Image.open('city_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("Most of the users in the given dataset belong to city having id as **_1_** or the data that is provided was collected largely in cities with id as **_1_** followed by id **_13_** & **_5_**. Thus, we can expect some local trends in the type of songs generally liked by the people living in these particular cities. Both the target values are almost in equal numbers in all cities.", 
             unsafe_allow_html=False)
 
 st.subheader('Language vs target')
-image = Image.open('lang_tar.png')
+image = Image.open('lang_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("Most of the users tend to prefer the language having id as **_3_** followed by id **_52_**. There isn't any significant difference in the target values they contribute to. But after having a look at the previous plot of cities data, we can infer that users/people living in cities **_1_** & **_13_** prefer languages **_3_** & **_52_** respectively.", 
             unsafe_allow_html=False)
 
 st.subheader('Registration via vs target')
-image = Image.open('regvia_tar.png')
+image = Image.open('regvia_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("A ot of users prefer registering via modes **_9_** & **_7_**, which may be easy ways to register probably using existing google accounts or some social media account, etc. Both these modes along with others have somewhat same number of events trigerred for both the target values.", 
             unsafe_allow_html=False)
@@ -173,7 +173,7 @@ st.markdown("We can see there is a strong **_correlation_** in the trends of **m
             unsafe_allow_html=False)
 
 st.subheader('Dendrogram for missing numbers')
-image = Image.open('msno_dendro.png')
+image = Image.open('msno_dendro.PNG')
 st.image(image, use_column_width=True)
 st.markdown("A missing value dendrogram **_clusters_** features which show a strong **_correlation_** in trens=ds of missing values. Features clustered initially have a strong correlation while those joined/clustered later don't have that strong correlation.", 
             unsafe_allow_html=False)
