@@ -72,7 +72,7 @@ def load_data(nrows):
 #    st.write(data)
 
 st.subheader('Distribution of target')
-image = Image.open('cnt_plot_tar.png')
+image = Image.open('cnt_plot_tar.PNG')
 st.image(image, use_column_width=True)
 st.markdown("We can observe that the dataset is **_balanced_** around the **'target'** attribute.",
              unsafe_allow_html=False)
