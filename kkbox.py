@@ -63,13 +63,13 @@ def load_data(nrows):
     data = pd.read_csv('train_data_merged.csv', nrows=nrows)
     return data
 
-data_load_state = st.text('Loading data...')
-data = load_data(100000)
-data_load_state.text("Done!")
+#data_load_state = st.text('Loading data...')
+#data = load_data(100000)
+#data_load_state.text("Done!")
 
-if st.checkbox('Show Raw Data'):
-    st.subheader('Raw Data')
-    st.write(data)
+#if st.checkbox('Show Raw Data'):
+#    st.subheader('Raw Data')
+#    st.write(data)
 
 st.subheader('Distribution of target')
 image = Image.open('cnt_plot_tar.png')
