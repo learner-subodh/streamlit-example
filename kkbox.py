@@ -59,17 +59,17 @@ st.markdown("2. Try to provide some interpretability")
 st.header("3. Exploratory Data Analysis")
 
 @st.cache
-def load_data(nrows):
-    data = pd.read_csv('train_data_merged.csv', nrows=nrows)
+def load_data():
+    data = pd.read_csv('train_data_merged_.csv')
     return data
 
-#data_load_state = st.text('Loading data...')
-#data = load_data(100000)
-#data_load_state.text("Done!")
+data_load_state = st.text('Loading data...')
+data = load_data()
+data_load_state.text("Done!")
 
-#if st.checkbox('Show Raw Data'):
-#    st.subheader('Raw Data')
-#    st.write(data)
+if st.checkbox('Show Raw Data'):
+    st.subheader('Raw Data')
+    st.write(data)
 
 st.subheader('Distribution of target')
 image = Image.open('cnt_plot_tar.PNG')
