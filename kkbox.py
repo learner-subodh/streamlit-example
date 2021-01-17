@@ -175,12 +175,12 @@ st.markdown("We can see there is a strong **_correlation_** in the trends of **m
 st.subheader('Dendrogram for missing numbers')
 image = Image.open('msno_dendro.PNG')
 st.image(image, use_column_width=True)
-st.markdown("A missing value dendrogram **_clusters_** features which show a strong **_correlation_** in trens=ds of missing values. Features clustered initially have a strong correlation while those joined/clustered later don't have that strong correlation.", 
+st.markdown("A missing value dendrogram **_clusters_** features which show a strong **_correlation_** in trends of missing values. Features clustered initially have a strong correlation while those joined/clustered later don't have that strong correlation.", 
             unsafe_allow_html=False)
 
 st.markdown("____")
 st.subheader('**_Thank You!_**')
-st.markdown("Subodh Lonkar")
-st.markdown("LinkedIn: https://www.linkedin.com/in/subodh-lonkar-47662819b/")
-st.markdown("GitHub: https://github.com/learner-subodh")
-st.markdown("Medium: https://medium.com/@learner.subodh")
+st.markdown("**Subodh Lonkar :)**")
+st.markdown("**LinkedIn:** https://www.linkedin.com/in/subodh-lonkar-47662819b/")
+st.markdown("**GitHub:** https://github.com/learner-subodh")
+st.markdown("**Medium:** https://medium.com/@learner.subodh")
