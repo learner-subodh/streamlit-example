@@ -12,6 +12,8 @@ from PIL import Image
 
 st.title('KKBox Music Recommendation!')
 
+st.markdown("____")
+
 image = Image.open('kkbox-unsplash.jpg')
 st.image(image, use_column_width=True)
 
@@ -180,6 +182,7 @@ st.markdown("A missing value dendrogram **_clusters_** features which show a str
 
 st.markdown("____")
 st.subheader('**_Thank You!_**')
+st.markdown("____")
 st.markdown("**Subodh Lonkar :)**")
 st.markdown("**LinkedIn:** https://www.linkedin.com/in/subodh-lonkar-47662819b/")
 st.markdown("**GitHub:** https://github.com/learner-subodh")
