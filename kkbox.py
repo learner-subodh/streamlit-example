@@ -69,7 +69,7 @@ data_load_state = st.text('Loading data...')
 data = load_data()
 data_load_state.text("Done!")
 
-if st.checkbox('Show Raw Data'):
+if st.checkbox('Show a Subset of Raw Data'):
     st.subheader('Raw Data')
     st.write(data)
 
