@@ -3,5 +3,4 @@ pandas
 streamlit
 matplotlib
 seaborn
-opencv-contrib-python==3.4.0.12
 opencv-python--headless
