@@ -66,7 +66,7 @@ def classify_image():
         elif option == 'Omlette':
             st.text("   It's an Omlette!")
         elif option == 'Pizza':
-            st.text("   It's an Pizza!")
+            st.text("   It's a Pizza!")
         elif option == 'Select Image':
             st.text("   No image selected. Please select a valid choice.")
 
