@@ -2,28 +2,28 @@ import streamlit as st
 from PIL import Image
 import cv2 
 import numpy as np
-import tensorflow as tf
-import tensorflow
-from tensorflow import keras
-from keras import models
-from keras.models import load_model
-from keras import backend as K
+#import tensorflow as tf
+#import tensorflow
+#from tensorflow import keras
+#from keras import models
+#from keras.models import load_model
+#from keras import backend as K
 
-@st.cache(allow_output_mutation=True)
-def load_mobilenetv2():
-    model = load_model('my_model_trained_mobilenet.hdf5')
+#@st.cache(allow_output_mutation=True)
+#def load_mobilenetv2():
+#    model = load_model('my_model_trained_mobilenet.hdf5')
     #model._make_predict_function()
     # model.summary()  # included to make it visible when model is reloaded
     #session = K.get_session()
-    return model
+#    return model
 
-@st.cache(allow_output_mutation=True)
-def load_inceptionv3():
-    model = load_model('my_model_trained_inception.hdf5')
+#@st.cache(allow_output_mutation=True)
+#def load_inceptionv3():
+#    model = load_model('my_model_trained_inception.hdf5')
     #model._make_predict_function()
     # model.summary()  # included to make it visible when model is reloaded
     #session = K.get_session()
-    return model
+ #   return model
 
 def main():
 
@@ -42,18 +42,18 @@ def main():
             'Choose one of the following models',
             ('MobileNetV2', 'ResNet50', 'InceptionV3')
         )
-        model_pred = choose_model(selected_box_2)
+#        model_pred = choose_model(selected_box_2)
 
-def choose_model(selected_box_2):
-    if selected_box_2 == 'MobileNetV2':
-        model = load_mobilenetv2()
-    elif selected_box_2 == 'ResNet50':
-        model = load_mobilenetv2()
-    elif selected_box_2 == 'InceptionV3':
-        model = load_inceptionv3()
-    return model
+#def choose_model(selected_box_2):
+#    if selected_box_2 == 'MobileNetV2':
+#        model = load_mobilenetv2()
+#    elif selected_box_2 == 'ResNet50':
+#        model = load_mobilenetv2()
+#    elif selected_box_2 == 'InceptionV3':
+#        model = load_inceptionv3()
+#    return model
     
-model_pred = load_mobilenetv2()
+#model_pred = load_mobilenetv2()
 
 def welcome():
     
